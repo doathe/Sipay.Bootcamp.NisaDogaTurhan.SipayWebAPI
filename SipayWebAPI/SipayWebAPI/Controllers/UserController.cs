@@ -103,7 +103,7 @@ namespace SipayWebAPI.Controllers
 
         // Update Model ve Patch Model oluşturup onlarada Validation yap
         // Sıralama filtreleme yap.
-        // Global Exception Handling'e bak.
+        // Http Status Code dönüşlerine ba
 
     }
 }
