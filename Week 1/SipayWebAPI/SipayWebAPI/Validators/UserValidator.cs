@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
+using SipayWebAPI.Entities;
 
-namespace SipayWebAPI.Entities
+namespace SipayWebAPI.Validators
 {
     // Validations added for User Model with Fluent Validation.
     public class UserValidator : AbstractValidator<User>

@@ -1,5 +1,5 @@
 using FluentValidation.AspNetCore;
-using SipayWebAPI.Entities;
+using SipayWebAPI.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
