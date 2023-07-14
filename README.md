@@ -2,7 +2,7 @@
 
 Cohorts Week1 HW1
 
-- Rest standartlarına Restful API geliştirdim.
+- Rest standartlarına uygun Restful API geliştirdim.
 - GET,POST,PUT,DELETE,PATCH methodlarını kullanıldım.
 - Http status code standartlarına uygun bir yapı oluşturdum.
 - Fluent Validation ile Validation işlemlerini yaptım.
