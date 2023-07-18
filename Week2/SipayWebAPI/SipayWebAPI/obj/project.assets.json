@@ -578,11 +578,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nisat\\Desktop\\Sipay .Net Bootcamp\\Cohorts\\CohortsHW\\Week1\\SipayWebAPI\\SipayWebAPI\\SipayWebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\nisat\\Desktop\\Sipay .Net Bootcamp\\Cohorts\\CohortsHW\\Week 1\\SipayWebAPI\\SipayWebAPI\\SipayWebAPI.csproj",
       "projectName": "SipayWebAPI",
-      "projectPath": "C:\\Users\\nisat\\Desktop\\Sipay .Net Bootcamp\\Cohorts\\CohortsHW\\Week1\\SipayWebAPI\\SipayWebAPI\\SipayWebAPI.csproj",
+      "projectPath": "C:\\Users\\nisat\\Desktop\\Sipay .Net Bootcamp\\Cohorts\\CohortsHW\\Week 1\\SipayWebAPI\\SipayWebAPI\\SipayWebAPI.csproj",
       "packagesPath": "C:\\Users\\nisat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nisat\\Desktop\\Sipay .Net Bootcamp\\Cohorts\\CohortsHW\\Week1\\SipayWebAPI\\SipayWebAPI\\obj\\",
+      "outputPath": "C:\\Users\\nisat\\Desktop\\Sipay .Net Bootcamp\\Cohorts\\CohortsHW\\Week 1\\SipayWebAPI\\SipayWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nisat\\AppData\\Roaming\\NuGet\\NuGet.Config",
