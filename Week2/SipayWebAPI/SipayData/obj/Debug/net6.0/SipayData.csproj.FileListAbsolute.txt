@@ -1,0 +1,14 @@
+C:\Users\nisat\Desktop\Sipay .Net Bootcamp\Projeler\CohortsHW\SipayWebAPI\SipayData\bin\Debug\net6.0\SipayData.deps.json
+C:\Users\nisat\Desktop\Sipay .Net Bootcamp\Projeler\CohortsHW\SipayWebAPI\SipayData\bin\Debug\net6.0\SipayData.runtimeconfig.json
+C:\Users\nisat\Desktop\Sipay .Net Bootcamp\Projeler\CohortsHW\SipayWebAPI\SipayData\bin\Debug\net6.0\SipayData.dll
+C:\Users\nisat\Desktop\Sipay .Net Bootcamp\Projeler\CohortsHW\SipayWebAPI\SipayData\bin\Debug\net6.0\SipayData.pdb
+C:\Users\nisat\Desktop\Sipay .Net Bootcamp\Projeler\CohortsHW\SipayWebAPI\SipayData\obj\Debug\net6.0\SipayData.csproj.AssemblyReference.cache
+C:\Users\nisat\Desktop\Sipay .Net Bootcamp\Projeler\CohortsHW\SipayWebAPI\SipayData\obj\Debug\net6.0\SipayData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nisat\Desktop\Sipay .Net Bootcamp\Projeler\CohortsHW\SipayWebAPI\SipayData\obj\Debug\net6.0\SipayData.AssemblyInfoInputs.cache
+C:\Users\nisat\Desktop\Sipay .Net Bootcamp\Projeler\CohortsHW\SipayWebAPI\SipayData\obj\Debug\net6.0\SipayData.AssemblyInfo.cs
+C:\Users\nisat\Desktop\Sipay .Net Bootcamp\Projeler\CohortsHW\SipayWebAPI\SipayData\obj\Debug\net6.0\SipayData.csproj.CoreCompileInputs.cache
+C:\Users\nisat\Desktop\Sipay .Net Bootcamp\Projeler\CohortsHW\SipayWebAPI\SipayData\obj\Debug\net6.0\SipayData.dll
+C:\Users\nisat\Desktop\Sipay .Net Bootcamp\Projeler\CohortsHW\SipayWebAPI\SipayData\obj\Debug\net6.0\refint\SipayData.dll
+C:\Users\nisat\Desktop\Sipay .Net Bootcamp\Projeler\CohortsHW\SipayWebAPI\SipayData\obj\Debug\net6.0\SipayData.pdb
+C:\Users\nisat\Desktop\Sipay .Net Bootcamp\Projeler\CohortsHW\SipayWebAPI\SipayData\obj\Debug\net6.0\SipayData.genruntimeconfig.cache
+C:\Users\nisat\Desktop\Sipay .Net Bootcamp\Projeler\CohortsHW\SipayWebAPI\SipayData\obj\Debug\net6.0\ref\SipayData.dll
