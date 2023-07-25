@@ -40,6 +40,9 @@ public class UserService : IUserService
     public async Task<UserViewModel> GetByIdAsync(int id)
     {
         var user = await _context.Set<User>().FindAsync(id);
+        if(user == null)
+            throw new InvalidOperationException("User not found");
+
         UserViewModel viewModel = new UserViewModel
         {
             FullName = user.FirstName + " " + user.LastName,
@@ -71,9 +74,7 @@ public class UserService : IUserService
 
         var existCheck = _context.Set<User>().Any(i => i.Email == user.Email);
         if (existCheck)
-        {
             throw new InvalidOperationException("User already exist");
-        }
 
         await _context.Set<User>().AddAsync(user);
         await _context.SaveChangesAsync();
@@ -84,7 +85,7 @@ public class UserService : IUserService
     {
         var entity = await _context.Set<User>().FirstOrDefaultAsync(i => i.Id == id);
         if (entity == null)
-            throw new ArgumentNullException(nameof(entity));
+            throw new InvalidOperationException("User not found");
 
         _context.Set<User>().Remove(entity);
         await _context.SaveChangesAsync();
@@ -95,7 +96,7 @@ public class UserService : IUserService
     {
         var existingEntity = _context.Set<User>().FirstOrDefault(i => i.Id == id);
         if (existingEntity == null)
-            throw new ArgumentNullException(nameof(entity));
+            throw new InvalidOperationException("User not found");
 
         User user = new User
         {
@@ -120,7 +121,7 @@ public class UserService : IUserService
     {
         var existingEntity = _context.Users.FirstOrDefault(i => i.Id == id);
         if (existingEntity == null)
-            throw new InvalidOperationException("User not found.");
+            throw new InvalidOperationException("User not found");
 
         existingEntity.UpdatedOn = DateTime.Now;
         _context.Entry(existingEntity).CurrentValues.SetValues(existingEntity);
@@ -131,7 +132,7 @@ public class UserService : IUserService
     {
         var entityCheck = _context.Users.Any(i => i.Email == email && i.Password == password);
         if (!entityCheck)
-            throw new InvalidOperationException("User not found.");
+            throw new InvalidOperationException("User not found");
         return "Successful Login";
     }
 }

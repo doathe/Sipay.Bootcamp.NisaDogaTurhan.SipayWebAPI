@@ -38,6 +38,9 @@ public class CarService : ICarService
     public async Task<CarViewModel> GetByIdAsync(int id)
     {
         var car = await _context.Set<Car>().Include(i => i.User).FirstOrDefaultAsync(i => i.Id == id);
+        if(car == null)
+            throw new InvalidOperationException("Car not found");
+
         CarViewModel viewModel = new CarViewModel
         {
             Brand = car.Brand,
@@ -68,9 +71,7 @@ public class CarService : ICarService
 
         var existCheck = _context.Set<Car>().Any(i => i.LicensePlate == car.LicensePlate);
         if (existCheck)
-        {
-            throw new InvalidOperationException("User already exist");
-        }
+            throw new InvalidOperationException("Car already exist");
 
         await _context.Set<Car>().AddAsync(car);
         await _context.SaveChangesAsync();
@@ -81,7 +82,7 @@ public class CarService : ICarService
     {
         var entity = await _context.Set<Car>().FirstOrDefaultAsync(i => i.Id == id);
         if (entity == null)
-            throw new ArgumentNullException(nameof(entity));
+            throw new InvalidOperationException("Car not found");
 
         _context.Set<Car>().Remove(entity);
         await _context.SaveChangesAsync();
@@ -92,7 +93,7 @@ public class CarService : ICarService
     {
         var existingEntity = _context.Set<Car>().Include(i => i.User).FirstOrDefault(i => i.Id == id);
         if (existingEntity == null)
-            throw new ArgumentNullException(nameof(entity));
+            throw new InvalidOperationException("Car not found");
 
         Car car = new Car
         {
