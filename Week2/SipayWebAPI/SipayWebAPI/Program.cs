@@ -31,7 +31,6 @@ builder.Services.AddDbContext<SipayDbContext>(option => option.UseNpgsql(connect
 // Service Dependency Injection
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ICarService, CarService>();
-builder.Services.AddScoped<IRentalService, RentalService>();
 
 // Configure logging
 builder.Logging.ClearProviders();

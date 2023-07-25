@@ -19,7 +19,7 @@ public class User : BaseEntity
     public int LicenseNumber { get; set; }
     public bool IsActive { get; set; }
 
-    public virtual ICollection<Rental>? Rentals { get; set; }
+    public virtual ICollection<Car>? Cars { get; set; }
 }
 
 // User Table definitions

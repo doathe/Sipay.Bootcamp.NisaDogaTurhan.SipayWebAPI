@@ -17,7 +17,8 @@ public class Car : BaseEntity
     public decimal DailyPrice { get; set; }
     public bool IsActive { get; set; }
 
-    public virtual ICollection<Rental>? Rentals { get; set; }
+    public int UserId { get; set; }
+    public User User { get; set; }
 }
 
 // Car Table definitions
@@ -39,5 +40,10 @@ public class CarConfiguration : IEntityTypeConfiguration<Car>
 
         builder.Property(e => e.CreatedOn).IsRequired(true).HasConversion(v => v, v => DateTime.SpecifyKind(v, DateTimeKind.Utc));
         builder.Property(e => e.UpdatedOn).IsRequired(true).HasConversion(v => v, v => DateTime.SpecifyKind(v, DateTimeKind.Utc));
+
+        // 1 - M relation between User - Car
+        builder.HasOne(e => e.User)
+               .WithMany(e => e.Cars)
+               .HasForeignKey(e => e.UserId);
     }
 }

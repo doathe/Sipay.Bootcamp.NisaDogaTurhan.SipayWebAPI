@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nisat\\Desktop\\Sipay .Net Bootcamp\\Projeler\\CohortsHW\\SipayWebAPI\\SipayData\\SipayData.csproj": {}
+    "C:\\Users\\nisat\\Desktop\\Sipay .Net Bootcamp\\Cohorts\\CohortsHW\\Week2\\SipayWebAPI\\SipayData\\SipayData.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nisat\\Desktop\\Sipay .Net Bootcamp\\Projeler\\CohortsHW\\SipayWebAPI\\SipayData\\SipayData.csproj": {
+    "C:\\Users\\nisat\\Desktop\\Sipay .Net Bootcamp\\Cohorts\\CohortsHW\\Week2\\SipayWebAPI\\SipayData\\SipayData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nisat\\Desktop\\Sipay .Net Bootcamp\\Projeler\\CohortsHW\\SipayWebAPI\\SipayData\\SipayData.csproj",
+        "projectUniqueName": "C:\\Users\\nisat\\Desktop\\Sipay .Net Bootcamp\\Cohorts\\CohortsHW\\Week2\\SipayWebAPI\\SipayData\\SipayData.csproj",
         "projectName": "SipayData",
-        "projectPath": "C:\\Users\\nisat\\Desktop\\Sipay .Net Bootcamp\\Projeler\\CohortsHW\\SipayWebAPI\\SipayData\\SipayData.csproj",
+        "projectPath": "C:\\Users\\nisat\\Desktop\\Sipay .Net Bootcamp\\Cohorts\\CohortsHW\\Week2\\SipayWebAPI\\SipayData\\SipayData.csproj",
         "packagesPath": "C:\\Users\\nisat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nisat\\Desktop\\Sipay .Net Bootcamp\\Projeler\\CohortsHW\\SipayWebAPI\\SipayData\\obj\\",
+        "outputPath": "C:\\Users\\nisat\\Desktop\\Sipay .Net Bootcamp\\Cohorts\\CohortsHW\\Week2\\SipayWebAPI\\SipayData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nisat\\AppData\\Roaming\\NuGet\\NuGet.Config",
