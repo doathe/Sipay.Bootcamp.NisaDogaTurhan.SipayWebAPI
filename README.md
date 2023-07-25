@@ -12,3 +12,11 @@ Cohorts Week1 HW1
 - Yorum satırlarına önem verdim.
 
 Cohorts Week2 HW2
+
+- Rest standartlarına ve SOLID prensiplerine uygun bir proje geliştirdim.
+- Projeme servis ekledim ve sonrasında Dependency injection ile onları pipeline'a dahil ettim.
+- Projemde swagger implementasyonu bulunmaktadır.
+- Global loglama yapan bir middleware ve global exception middleware ekledim.
+- Basit bir kullanıcı giriş sistemi yaptım ve bunu oluşturduğumu service'te kontrol ettim.
+
+Cohorts Week3 HW3-4
