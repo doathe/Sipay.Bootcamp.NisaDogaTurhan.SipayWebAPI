@@ -1,6 +1,4 @@
-# <h1 align="center">
-SipayWebAPI
-</h1> #
+# SipayWebAPI #
 
 ## Cohorts Week1 HW1 ##
 
