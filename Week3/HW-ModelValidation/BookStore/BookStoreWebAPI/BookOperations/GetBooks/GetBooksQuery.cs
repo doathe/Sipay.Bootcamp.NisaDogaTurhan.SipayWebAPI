@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using BookStoreWebAPI.Common;
 using BookStoreWebAPI.Context;
 using BookStoreWebAPI.Entities;
 
@@ -20,6 +19,7 @@ public class GetBooksQuery
     {
         var books = _context.Set<Book>().OrderBy(x => x.Id).ToList<Book>();
 
+        // Maps the Book to BooksViewModel
         var viewModel = _mapper.Map<List<BooksViewModel>>(books);
 
         return viewModel;

@@ -20,9 +20,11 @@ public class GetBookDetailQuery
     {
         var book = _context.Set<Book>().FirstOrDefault(x => x.Id == BookId);
 
-        if(book is null)
+        // Checks if the book exists
+        if (book is null)
             throw new InvalidOperationException("Book not found.");
 
+        // Maps the Book to BookDetailViewModel
         var viewModel = _mapper.Map<BookDetailViewModel>(book);
 
         return viewModel;

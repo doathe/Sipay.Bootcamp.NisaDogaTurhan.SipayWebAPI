@@ -5,13 +5,7 @@ using BookStoreWebAPI.BookOperations.GetBookDetail;
 using BookStoreWebAPI.BookOperations.GetBooks;
 using BookStoreWebAPI.BookOperations.UpdateBook;
 using BookStoreWebAPI.Context;
-using BookStoreWebAPI.Entities;
-using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace BookStoreWebAPI.Controllers;
 
@@ -44,6 +38,7 @@ public class BookController : ControllerBase
         GetBookDetailQuery query = new GetBookDetailQuery(context, mapper);
         query.BookId = id;
 
+        // Validation processes
         GetBookDetailQueryValidator validator = new GetBookDetailQueryValidator();
         var validationResult = validator.Validate(query);
 
@@ -65,6 +60,7 @@ public class BookController : ControllerBase
         CreateBookCommand command = new CreateBookCommand(context, mapper);
         command.Model = newBook;
 
+        // Validation processes
         CreateBookCommandValidator validator = new CreateBookCommandValidator();
         var validationResult = validator.Validate(command);
 
@@ -87,6 +83,7 @@ public class BookController : ControllerBase
         command.BookId = id;
         command.Model = updateBook;
 
+        // Validation processes
         UpdateBookCommandValidator validator = new UpdateBookCommandValidator();
         var validationResult = validator.Validate(command);
 
@@ -108,6 +105,7 @@ public class BookController : ControllerBase
         DeleteBookCommand command = new DeleteBookCommand(context);
         command.BookId = id;
 
+        // Validation processes
         DeleteBookCommandValidator validator = new DeleteBookCommandValidator();
         var validationResult = validator.Validate(command);
 

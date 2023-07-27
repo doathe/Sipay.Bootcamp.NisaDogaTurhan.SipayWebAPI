@@ -1,5 +1,4 @@
-﻿using BookStoreWebAPI.BookOperations.UpdateBook;
-using BookStoreWebAPI.Context;
+﻿using BookStoreWebAPI.Context;
 using BookStoreWebAPI.Entities;
 
 namespace BookStoreWebAPI.BookOperations.DeleteBook;
@@ -18,9 +17,11 @@ public class DeleteBookCommand
     {
         var book = _context.Set<Book>().FirstOrDefault(x => x.Id == BookId);
 
+        // Checks if the book exists
         if (book is null)
             throw new InvalidOperationException("Book not found");
 
+        // Database operations
         _context.Set<Book>().Remove(book);
         _context.SaveChanges();
     }

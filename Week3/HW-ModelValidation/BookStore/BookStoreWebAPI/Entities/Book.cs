@@ -16,7 +16,6 @@ public class Book
 }
 
 // Book table definition
-
 public class BookConfiguration : IEntityTypeConfiguration<Book>
 {
     public void Configure(EntityTypeBuilder<Book> builder)

@@ -1,5 +1,6 @@
 ﻿namespace BookStoreWebAPI.Common;
 
+// GenreEnum for generate GenreId to string value
 public enum GenreEnum
 {
     PersonalGrowth = 1,

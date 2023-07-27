@@ -1,7 +1,6 @@
 using BookStoreWebAPI.BookOperations.CreateBook;
 using BookStoreWebAPI.Context;
 using BookStoreWebAPI.Middlewares;
-using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
