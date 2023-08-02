@@ -1,0 +1,41 @@
+﻿using AutoMapper;
+using BookStoreWebAPI.Context;
+using BookStoreWebAPI.Entities;
+using Microsoft.EntityFrameworkCore;
+
+namespace BookStoreWebAPI.Application.BookOperations.Queries.GetBookDetail;
+
+public class GetBookDetailQuery
+{
+    private readonly BookStoreDbContext _context;
+    private readonly IMapper _mapper;
+    public int BookId { get; set; }
+
+    public GetBookDetailQuery(BookStoreDbContext context, IMapper mapper)
+    {
+        _context = context;
+        _mapper = mapper;
+    }
+
+    public BookDetailViewModel Handle()
+    {
+        var book = _context.Books.Include(x => x.Genre).FirstOrDefault(x => x.Id == BookId);
+
+        // Checks if the book exists
+        if (book is null)
+            throw new InvalidOperationException("Book not found.");
+
+        // Maps the Book to BookDetailViewModel
+        var viewModel = _mapper.Map<BookDetailViewModel>(book);
+
+        return viewModel;
+    }
+}
+
+public class BookDetailViewModel
+{
+    public string Title { get; set; }
+    public string Genre { get; set; }
+    public int PageCount { get; set; }
+    public string PublishDate { get; set; }
+}
